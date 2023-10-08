@@ -1,0 +1,10 @@
+.avatar {
+	display: block;
+	width: var(--size, 256px);
+	height: var(--size, 256px);
+	border-radius: 50%;
+	overflow: hidden;
+	pointer-events: none;
+	-webkit-user-select: none;
+	user-select: none;
+}

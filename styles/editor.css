@@ -1,0 +1,17 @@
+.editor-label {
+	text-align: right;
+}
+
+.editor-input,
+.editor-input[type=text],
+.editor-input[type=number] {
+	width: 6ch;
+}
+
+.source-inputs {
+	margin-bottom: var(--space);
+}
+
+.source-input {
+	width: 5.75em;
+}

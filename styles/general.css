@@ -1,0 +1,47 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #fff;
+	background: #2fa169 url('../assets/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(0.6vmax);
+	-webkit-backdrop-filter: blur(0.6vmax);
+}
+
+h1 {
+	font-size: 1.0625em;
+	letter-spacing: 1.5px;
+	text-shadow: 2.3px 2.3px #000;
+}
+
+a:not(.button) {
+	color: var(--color-link);
+	text-decoration: none;
+	outline: 0;
+}
+
+a:not(.button):hover,
+a:not(.button):focus-visible {
+	color: var(--color-link-hover);
+	text-decoration: underline;
+}
+
+a:not(.button):active {
+	color: var(--color-link-active);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0;
+}

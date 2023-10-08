@@ -1,0 +1,34 @@
+@import './reset.css';
+@import './general.css';
+@import './layout.css';
+@import './forms.css';
+@import './editor.css';
+@import './avatar.css';
+@import './discord.css';
+@import './misc.css';
+
+@font-face {
+	font-family: 'Equalize';
+	src: local('Equalize'), url('../assets/Equalize.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+}
+
+:root {
+	--color-bg: #313338;
+	--color-fg: #DBDEE1;
+	--color-fg-hint: #7A7E88;
+	--color-accent: hsl(202.54, 72.69%, 51.18%);
+	--color-focus: hsl(202.54, 100%, 70%);
+	--color-separator: #1E1F22;
+	--color-link: hsl(202.54, 90%, 60%);
+	--color-link-hover: hsl(202.54, 100%, 70%);
+	--color-link-active: hsl(202.54, 72.69%, 51.18%);
+	--color-input-bg: #1E1F22;
+	--color-input-fg: var(--color-fg);
+
+	--space: 1.5em;
+	--space-md: 0.75em;
+	--space-sm: 0.5em;
+	--space-xs: 0.25em;
+}

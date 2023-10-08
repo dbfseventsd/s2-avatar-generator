@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ],
+    "paths": {
+      "/*": ["./*"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

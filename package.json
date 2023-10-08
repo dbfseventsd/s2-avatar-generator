@@ -1,0 +1,19 @@
+{
+  "name": "s2-avatar-generator",
+  "version": "1.0.0",
+  "description": "Soldat 2 avatar generator",
+  "scripts": {
+    "dev": "sirv --dev"
+  },
+  "keywords": [
+    "soldat 2",
+    "avatar",
+    "generator"
+  ],
+  "author": "dbfseventsd <8547233+dbfseventsd@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mithril-global": "^2.0.4",
+    "sirv-cli": "^2.0.2"
+  }
+}

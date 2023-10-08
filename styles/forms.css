@@ -1,0 +1,157 @@
+label.disabled {
+	opacity: 0.4;
+}
+
+input:focus {
+	box-shadow: 0 0 0 3px var(--color-focus);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+input {
+	margin: 0;
+	font: inherit;
+	border: 0;
+	border-radius: 3px;
+	color: var(--color-input-fg);
+	caret-color: var(--color-input-fg);
+	background-color: var(--color-input-bg);
+	outline: 0;
+}
+
+input[type=text],
+input[type=number] {
+	max-width: 100%;
+	padding: 0 0.25em;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	appearance: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	width: 1em;
+	height: 1em;
+}
+
+input[type=checkbox] {
+	margin: 0.3em 0 0.1em;
+}
+
+input[type=radio] {
+	margin: 0.2em 0 0.2em;
+	border-radius: 50%;
+}
+
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+	background-color: var(--color-link);
+}
+
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+	background-color: var(--color-link-hover);
+}
+
+input[type=checkbox]:active,
+input[type=radio]:active {
+	background-color: var(--color-link-active);
+}
+
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+	content: '';
+	background-color: #fff;
+}
+
+input[type=checkbox]:checked::before {
+	width: 0.75em;
+	height: 0.75em;
+	clip-path: polygon(15% 5%, 5% 15%, 40% 50%, 5% 85%, 15% 95%, 50% 60%, 85% 95%, 95% 85%, 60% 50%, 95% 15%, 85% 5%, 50% 40%);
+}
+
+input[type=radio]:checked::before {
+	width: 0.4em;
+	height: 0.4em;
+	clip-path: circle(50% at 50% 50%);
+}
+
+input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+	background-color: var(--color-input-bg);
+}
+
+label > input[type=checkbox],
+label > input[type=radio] {
+	margin: -0.1em 0.5em 0.1em 0;
+}
+
+input:disabled {
+	color: var(--color-input-fg);
+	-webkit-text-fill-color: var(--color-input-fg);
+	opacity: 0.4;
+}
+
+label.disabled > input:disabled {
+	opacity: 1;
+}
+
+input::placeholder {
+	color: var(--color-fg-hint);
+}
+
+button,
+.button {
+	appearance: none;
+	display: inline-block;
+	border: 0;
+	padding: 0.25em 0.5em;
+	font: inherit;
+	line-height: 1;
+	text-align: center;
+	color: #fff;
+	background-color: var(--color-link);
+	border-radius: 3px;
+	text-decoration: none;
+	cursor: default;
+	outline: 0;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+	background-color: var(--color-link-hover);
+}
+
+button:active,
+.button:active {
+	background-color: var(--color-link-active);
+}
+
+button:disabled,
+.button.disabled {
+	background-color: transparent;
+	box-shadow: inset 0 0 0 1px var(--color-separator);
+	color: var(--color-fg-hint);
+}
+
+.file-button {
+	display: block;
+}
+
+.button.disabled {
+	pointer-events: none;
+}
